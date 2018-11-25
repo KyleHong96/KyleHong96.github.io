@@ -3,29 +3,30 @@
 <head>
 	<title>Digital Innovation</title>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link type="text/css" rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link type="text/css" rel="stylesheet" href="styles.css" />
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-    
-    
+     
 <body>
-    <nav class="navbar fixed-top navbar-expand-lg">
+    <nav class="navbar fixed-top navbar-expand-md">
         <div class="container">
             <div class="row">
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarmenu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <a href="#home" class="navbar-brand">
+                
+                <a class="navbar-brand" href="#home" >
                     <img src="assets/picture/logo.png" class="logo">
                 </a>
+                
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="fa fa-reorder"></span>
+                    </button>
+                    
+                    
 
-                <div class="collapse navbar-collapse" id="navbarmenu">
-
-                    <ul class="navbar-nav ml-auto">
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
                             <a href="#keyfeatures" class="nav-link">KEY FEATURES</a>
                         </li>
@@ -42,13 +43,12 @@
                             <a href="#customers-case-history" class="nav-link">CUSTOMERS AND CASE HISTORY</a>
                         </li>
                         
-                        <li class="nav-item" id="contact-btn">
+                        <li class="navbar-contact-btn" id="contact-btn">
                             <div class="contactusbtn-hover">
-                            <a href="#contact-us-now-la" id="contact-us-button">CONTACT US</a>
+                            <a href="#contactsection" id="contact-us-button">CONTACT US</a>
                             </div>
                         </li>
                     </ul>
-
                 </div>
             </div>
         </div>
@@ -56,60 +56,45 @@
     
 <section class="first-section" id="home">
     <div class="color-overlay"></div>
-    <div class="background1"></div>
-        <div class="container">
-            <div class="row">
-                
-                <div class="first-section-content-container">
+        <div class="background1"></div>
+            <div class="container">
+                <div class="row">
                     
-                    <div class="first-section-content">
-                        
-                            <div class="container">
-                                <div class="line"></div>
+            <div class="first-section-content-container">                  
+                <div class="container">
+                    <div class="line"></div>
+                        <h1>DISPLAYER 2.5</h1>
+                        <h2>DIGITAL SIGNAGE PLATFORM</h2>
 
-                                <h1>DISPLAYER 2.5</h1>
-                                <h2>DIGITAL SIGNAGE PLATFORM</h2>
+                            <div class="first-section-paragraph">
+                                <p>Displayer 2.5 is a complete digital signage platform that allows you to remotely manage any <br> number of TV Screen, monitors, kiosk, all around the world straight from your desktop.</p>
 
-                                <div class="first-section-paragraph">
-                                    <p class="p1">Displayer 2.5 is a complete digital signage platform that allows you to remotely manage any <br> number of TV Screen, monitors, kiosk, all around the world straight from your desktop.</p>
-
-                                    <p class="p2">It's easy to install and it's a full solution:</p>
-
-                                    <p class="p3">
-                                        Server, Client and Player Hardware, all inclusive in 1 small monthly or annual fee!</p>
-                                </div>
-                                            
-                            </div>
+                                <p><span class="larger-font-size">It's easy to install and it's a full solution:</span>
+                                <br>
+                                Server, Client and Player Hardware, all inclusive in 1 small monthly or annual fee!</p>
+                            </div>           
+                </div>
                     
-                    <div class="first-section-content button">
-                        <div class="contactusbtn-hover">
-                            <a href="#contact-us-now-la" id="contact-us-button2">CONTACT US</a>
-                        </div>
+                <div class="first-section-content button">
+                    <div class="contactusbtn-hover">
+                        <a href="#contactsection" id="contact-us-button2">CONTACT US</a>
                     </div>
-                
                 </div>
             </div>
         </div>
     </div>
- </section>
+</section>
         
-
-<section class="second-section">
-    
+<section class="second-section" id="keyfeatures">
     <div class="container">
         <div class="row">
-            
-            <div class="key-features" id="keyfeatures">
-                <div class="key-features-heading">
-                    <div class="line2"></div>
-                        <h2>KEY FEATURES</h2>
-                </div>
+            <div class="key-features-heading" >
+                <div class="line2"></div>
+                    <h2>KEY FEATURES</h2>
             </div>
         </div>
         
-        
         <div class="row"> 
-            
             <div class="col-md-4" id="key-features-item">
                 <div class="key-features-item-heading" id="schedule-and-play-title">
                     SCHEDULE AND PLAY
@@ -120,7 +105,6 @@
                             </div>
                                 </div>
 
-            
             <div class="col-md-4">
                 <div class="key-features-item-heading" id="highly-efficient-single-board-pc-title">
                     HIGHLY EFFICIENT SINGLE BOARD PC
@@ -131,7 +115,6 @@
                             </div>
                                 </div>
 
-            
             <div class="col-md-4">
                 <div class="key-features-item-heading" id="bi-direction-communication-title">
                     BI-DIRECTIONAL COMMUNICATION
@@ -141,10 +124,7 @@
                             Realtime communication between Server and Players: you will deploy your updates in a few seconds!
                             </div>
                                 </div>
-        </div>
-            
-        
-        <div class="row">
+
             
             <div class="col-md-4">
                 <div class="key-features-item-heading" id="it-never-stops-title">
@@ -183,71 +163,61 @@
     
     
 <section class="third-section" id="displayer-in-deep">
-    <div class="third-section-content-container">
-        <div class="container">
-            <div class="row">
+    <div class="color-overlay2"></div>
+        <div class="background2"></div>
+            <div class="container">
+                <div class="row">
                 
-                <div class="third-section-content">
-                    <div class="third-section-heading">
-                            
-                        <div class="row">
-                            <div class="col-md-9">
-                                <div class="line3"></div>
-
+                    <div class="third-section-content">
+                        <div class="third-section-heading">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <div class="line3"></div>
                                     <h2>DISPLAYER 2.5 IN DEEP</h2>
-                            </div>
+                                </div>
 
-                            <div class="col-md-3">
+                            <div class="col-md-3" id="contact-us-button3-container">
                                 <div class="contactusbtn-hover">
-                                    <a href="#contact-us-now-la" id="contact-us-button3">CONTACT US</a>
+                                    <a href="#contactsection" id="contact-us-button3">CONTACT US</a>
                                 </div>
                             </div>
-                        
                         </div>
-                    
                     </div>
                     
                 <div class="heading-line"></div>
-                        
                     <div class="row">
-                        <div class="col-md-5" id="third-section-paragraph">
-                            <p class="p4">Our platform is the final result of 20 years of experience in the fields of web development and multimedia. Based on the popular Raspberry PI single board pc, our software take the best from all the hardware features (WIFI intergrated, fast SSD writer/reader, Broadcom GPU to decode H264 video) giving the best performance and the best FULL HD Experience.</p>
+                        <div class="col-md-6" id="third-section-paragraph">
+                            <p>Our platform is the final result of 20 years of experience in the fields of web development and multimedia. Based on the popular Raspberry PI single board pc, our software take the best from all the hardware features (WIFI intergrated, fast SSD writer/reader, Broadcom GPU to decode H264 video) giving the best performance and the best FULL HD Experience.</p>
 
-                            <p class="p5">Our player never stops, keeping on playing even without internet connection thanks to it's internal SSD card, up to 128GB.</p>
+                            <p>Our player never stops, keeping on playing even without internet connection thanks to it's internal SSD card, up to 128GB.</p>
 
-                            <p class="p6">The Server Admin panel is hosted on the cloud, for HA and business continuity.</p>
-                        
+                            <p>The Server Admin panel is hosted on the cloud, for HA and business continuity.</p>
                         </div>
                         
-                        
-                        <div class="col-md-7" id="third-section-paragraph2">
-                            <p class="p7"><b>It allows you to:</b>
+                        <div class="col-md-6" id="third-section-paragraph2">
+                            <p><b>It allows you to:</b>
                             <br>
                             Upload and manage your assets (any video format, any picture format, html5 zipped layout, MP3 and M4a audio files)</p>
 
-                            <p class="p8">Create your playlists with different and fully customizable layouts </p>
+                            <p>Create your playlists with different and fully customizable layouts </p>
 
-                            <p class="p9">Deploy to your player, following a schedule(up to 30 schedule playlists in the same moment) or to play immediately.</p>
+                            <p>Deploy to your player, following a schedule(up to 30 schedule playlists in the same moment) or to play immediately.</p>
                             
-                            <p class="p9">Monitor your player: The communication with the players is in realtime and bidirectional. The player will regularly communicate it's status and what it'
+                            <p>Monitor your player: The communication with the players is in realtime and bidirectional. The player will regularly communicate it's status and what it'
                             s playing. From the server you can check in any moment any details of the player and also have a realtime snapshot of te screen.</p>
                             
-                            <p class="p10">All inclusive formula: everything with a small montly or annual fee. more Player you get, more you save. 2 years of minimum contract time.</p>
-                        
+                            <p>All inclusive formula: everything with a small montly or annual fee. more Player you get, more you save. 2 years of minimum contract time.</p>
                         </div>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
     
-
 <section class="fourth-section" id="fully-customizable">
-    
     <div class="container">
         <div class="row">
-            
+        
             <div class="col-md-7" id="fourth-section-paragraph">
                 <div class="fourth-section-heading">
                     <div class="line4"></div>
@@ -262,7 +232,7 @@
                         <div class="heading-line2"></div>
                 
                 <div class="fourth-section-content">
-                    <p class="p11"><b>Some additional feature example:</b></p>
+                    <p><b>Some additional feature example:</b></p>
                 
                     <ul>
                         <li><span>Server-side video editing</span></li>
@@ -286,22 +256,14 @@
                         <li><span>Easy and powerful HTML5 editor to create your personal animation, promotions and message</span>
                         </li>
                     
-                        
-                    
                         <li><span>Video Wall</span></li>
-                    
-                        
                     
                         <li><span>Graphic Design</span></li>
                     
-                    
-                    
                         <li><span>Contents creation</span></li>
-                    
                     
                         <li><span>Audio Playlist and Radio Automation for Instore Radio.</span></li>
                     </ul>
-    
                 </div>
             </div>
             
@@ -314,7 +276,7 @@
         <div class="container">
             <div class="row" id="fourth-contact-btn-row">
                 <div class="contactusbtn-hover">
-                    <a href="#contact-us-now-la" id="contact-us-button4">CONTACT US</a>
+                    <a href="#contactsection" id="contact-us-button4">CONTACT US</a>
                 </div>
             </div>
         </div>
@@ -337,7 +299,7 @@
     
     <div class="fifth-section-content">
         <div class="row" id="fifth-content-row-padding">
-            <div class="col-md-5" id="fifth-content-col-md-5">
+            <div class="col-md-5" id="fifth-content-img-container">
                 <div class="fifth-content-img1"></div>
             </div>
                 
@@ -357,7 +319,7 @@
                                     
                                     <div class="col-md-6" id="manager-text-col-md-6">
                                         <div class="manager-text">
-                                            "With Displayer 2.5 we fixed with 1 single solution all our need regarding background music and Advertising display in our Tv Screens"
+                                            <p>"With Displayer 2.5 we fixed with 1 single solution all our need regarding background music and Advertising display in our Tv Screens"</p>
                                         </div>
                                     </div>
                                     
@@ -369,7 +331,7 @@
         </div>
         
         <div class="row" id="fifth-content-row-padding">
-            <div class="col-md-5" id="fifth-content-col-md-5">
+            <div class="col-md-5" id="fifth-content-img-container">
                 <div class="fifth-content-img2"></div>
             </div>
                 
@@ -389,7 +351,7 @@
                                     
                                     <div class="col-md-6" id="marketing-text-col-md-6">
                                         <div class="marketing-text">
-                                            "Managing our Musical video and our advertising could not be easier. And our promotion are always up-to-date!"
+                                            <p>"Managing our Musical video and our advertising could not be easier. And our promotion are always up-to-date!"</p>
                                         </div>
                                     </div>
                                 </div>
@@ -399,7 +361,7 @@
         </div>
         
         <div class="row" id="fifth-content-founder-row-padding">
-            <div class="col-md-5" id="fifth-content-col-md-5">
+            <div class="col-md-5" id="fifth-content-img-container">
                 <div class="fifth-content-img3"></div>
             </div>
                 
@@ -419,7 +381,7 @@
                                     
                                     <div class="col-md-6" id="founder-text-col-md-6">
                                         <div class="founder-text">
-                                            "With Displayer 2.5 we fixed with 1 single solution all our need regarding background music and Advertising display in our Tv Screens"
+                                            <p>"With Displayer 2.5 we fixed with 1 single solution all our need regarding background music and Advertising display in our Tv Screens"</p>
                                         </div>
                                     </div>
                                 </div>
@@ -432,10 +394,11 @@
     
 
     
-<footer class="contact-section" id="contact-us-now-la">
+<footer class="contact-section" id="contactsection">
     <div class="container">
-        <div class="row">
-            <div class="col-md-3" id="contact-col-md-5">
+        <div class="row flex-column-reverse flex-md-row">
+            
+            <div class="col-md-3" id="contact-details-container">
                 <div class="logo-big"></div>
                     <div class="contact-first-section-text">
                         <p class="para4">Lorem ipsum dolor sit amet, ut consequatamet. Neque diam urna ut platea vestibulum, odio non erat pharetra praesent.Elit suspendisse blandit.</p>
@@ -483,51 +446,42 @@
                         <label for="name">NAME</label>
                         <input class="form-control" type="text" id="nameinput" name="name" placeholder="Your Name" required> 
                         
-                    
                         <label for="agree-for">AGREE FOR</label>
                         <select class="form-control">
                           <option>ADVERTISING</option>
-                          <option>2</option>
-                          <option>3</option>
-                          <option>4</option>
-                          <option>5</option>
+                          <option>p</option>
+                          <option>e</option>
+                          <option>p</option>
+                          <option>e</option>
                         </select>
                         
                         <label for="subject">SUBJECT</label>
-                        <input class="form-control" type="text" id="subjectinput" name="subject" required>
+                        <input class="form-control" placeholder="Subject title here" type="text" id="subjectinput" name="subject" required>
                             
                             <label for="message">MESSAGE</label>
                             <textarea name="message" class="form-control" placeholder="Please write your message here" row="4" required></textarea>
                         
                         <input type="submit" value="Submit" class="form-control-submit">
                         
-                        
-                        
                         </form>
                         </div>
                     </div>
             
                 </div>
-        
+
             </div>
-            <div class="copyright-haha">
+            <div class="copyright-container">
             <p id="copyright">&#0169; DIGITAL INNOVATION STUDIO PLT ALL RIGHTS RESERVED. DESIGN BY <a href="http://www.evoweb.com.my" target="_blank">EVOWEB SDN BHD</a></p>
             </div>
         </div>
     </div>
-    
-    
 </footer>
     
-
     <script src="assets/js/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="assets/js/bootstrap.min.js"></script> 
-    
-    
-    
 
-    <script>
+<script>
         // Select all links with hashes
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
@@ -564,7 +518,6 @@ $('a[href*="#"]')
       }
     }
   });
-    </script>
-
+</script>
 </body>
 </html>
