@@ -934,9 +934,7 @@ textarea.form-control{
     font-size: 11px;
 	}
 
-	.third-section{
-		padding-top: 30px;
-	}
+
 
 	.third-section-content{
 		padding-top: 30px;
@@ -956,12 +954,12 @@ textarea.form-control{
 
 	.background2{
     width: 100%;
-    height: 750px;
+    height: 700px;
     z-index: -2;
 	}
 
 	.color-overlay2{
-		height: 750px;
+		height: 700px;
 	}
 
 	#contact-us-button3{
