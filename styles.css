@@ -934,6 +934,10 @@ textarea.form-control{
     font-size: 11px;
 	}
 
+	.third-section{
+		padding-bottom: 0;
+	}
+
 
 
 	.third-section-content{
@@ -971,7 +975,7 @@ textarea.form-control{
 	}
 
 	#fourth-section-paragraph{
-		padding-top: 0;
+		padding-top: 40px;
 	}
 
 	.fourth-section-heading-paragraph{
