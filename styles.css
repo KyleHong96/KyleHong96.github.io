@@ -878,7 +878,7 @@ textarea.form-control{
 ----------------------------*/
 @media screen and (min-width: 320px) and (max-width: 374px){
 	a, p, span, label, input, textarea, button, .first-section-paragraph p{
-		font-size:11px;
+		font-size:10px;
 	}
 
 	span.larger-font-size{
@@ -888,8 +888,8 @@ textarea.form-control{
 	div.background1{
      /* creates glow effect */
 	-webkit-box-shadow: inset 0px -50px 80px 10px rgba(255,255,255,1);
--moz-box-shadow: inset 0px -50px 80px 10px rgba(255,255,255,1);
-box-shadow: inset 0px -50px 80px 10px rgba(255,255,255,1);
+	-moz-box-shadow: inset 0px -50px 80px 10px rgba(255,255,255,1);
+	box-shadow: inset 0px -50px 80px 10px rgba(255,255,255,1);
 
 	background-image: url(assets/picture/server.jpeg);
     width: 100%;
@@ -926,11 +926,12 @@ box-shadow: inset 0px -50px 80px 10px rgba(255,255,255,1);
 	}
 
 	.key-features-item-heading{
-		font-size: 11px;
+		font-size: 10px;
 	}
 
 	.key-features-item-content {
     padding: 0rem 0 2rem 10px;
+    font-size: 11px;
 	}
 
 	.third-section{
@@ -942,7 +943,7 @@ box-shadow: inset 0px -50px 80px 10px rgba(255,255,255,1);
 	}
 
 	.third-section-heading h2{
-		font-size: 20px;
+		font-size: 18px;
 	}
 
 	.third-section {
@@ -968,11 +969,15 @@ box-shadow: inset 0px -50px 80px 10px rgba(255,255,255,1);
 	}
 
 	#fourth-section-paragraph{
-		padding-top: 30px;
+		
 	}
 
 	#fourth-section-bg-col.col-md-5{
 		display: none;
+	}
+
+	.fourth-section-heading{
+		padding-top: 30px;
 	}
 
 	.fourth-section-heading h2{
@@ -1080,9 +1085,9 @@ box-shadow: inset 0px -50px 80px 10px rgba(255,255,255,1);
 		margin-left: 65px;
     	margin-right: 65px;
 	}
-
-
 }
+
+@media screen and (min-width: 375px) and (max-width: 479px){
 
 
 
