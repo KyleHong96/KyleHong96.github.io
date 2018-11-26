@@ -947,7 +947,7 @@ textarea.form-control{
 	}
 
 	.third-section {
-    padding-bottom: 26px;
+    padding-bottom: 90px;
 	}
 
 	.fifth-content-bg1{
@@ -968,20 +968,16 @@ textarea.form-control{
 		display: none;
 	}
 
-	#fourth-section-paragraph{
-		
-	}
-
 	#fourth-section-bg-col.col-md-5{
 		display: none;
 	}
 
-	.fourth-section-heading{
-		padding-top: 40px;
-	}
-
 	.fourth-section-heading h2{
 		font-size: 20px;
+	}
+
+	#fourth-section-paragraph{
+		padding-top: 0;
 	}
 
 	.fourth-section-heading-paragraph{
