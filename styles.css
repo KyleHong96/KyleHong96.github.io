@@ -784,10 +784,6 @@ ul > li > span
     letter-spacing: 2px;
 }
 
-#contact-form-padding{
-    padding-left: 150px;
-}
-
 input,label{
     color: white;
     font-size: 14px;
