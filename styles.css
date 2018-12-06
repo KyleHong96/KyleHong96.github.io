@@ -11,6 +11,14 @@ html, body{
     height:100%;
 }
 
+h2{
+    font-size: 37px;
+}
+
+.contact-first-section-text p{
+    line-height: 1.2;
+}
+
 .navbar span{
 	color: white;
 }
@@ -92,6 +100,7 @@ div.background1{
 }
 
 .navbar-nav .nav-link{
+    text-align: center;
     font-weight: 550;
     font-size: 12px;
     color: white;
@@ -115,7 +124,7 @@ div.background1{
 }
 
 .first-section-paragraph{
-    padding-top: 15px;
+    margin-top: 15px;
 }
 
 .first-section-paragraph p{  
@@ -137,11 +146,11 @@ div.background1{
 
 .first-section-content-container h1{
     font-weight: bold;
-    font-size: 64px;
+    font-size: 60px;
 }
 
 .first-section-content-container h2{
-    font-size: 40px;
+    font-size: 37px;
     font-weight: bold;
 }
 
@@ -223,6 +232,7 @@ div.background1{
     width: 60px;
     height: 4px;
     line-height: 1rem;
+    margin-bottom: 10px;
 }
 
 .line4{
@@ -244,7 +254,7 @@ div.background1{
     line-height: 1rem;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .line6{
@@ -286,7 +296,7 @@ span.larger-font-size{
 
 .para4{
     color: white;
-    padding-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .key-features-heading{
@@ -296,7 +306,7 @@ span.larger-font-size{
 }
 
 .key-features-heading h2{
-    font-size: 40px;
+    font-size: 37px;
     letter-spacing: 2px;
     font-weight: bold;
     line-height: 1.6;
@@ -310,7 +320,7 @@ span.larger-font-size{
     font-weight: bold;
     text-align: left;
     line-height: 50px;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .key-features-item-content{
@@ -380,7 +390,7 @@ span.larger-font-size{
 }
 
 .third-section-heading h2{
-    font-size: 40px;
+    font-size: 37px;
     letter-spacing: 2px;
     font-weight: bold;
     line-height: 1.6;
@@ -389,7 +399,6 @@ span.larger-font-size{
 
 .heading-line{
     background-color: white;
-    width: 100%;
     height: 1.3px;
     margin-bottom: 1.5rem;
     line-height: 1rem;
@@ -407,11 +416,11 @@ span.larger-font-size{
 }
 
 .third-section{
-    padding-bottom: 35px;
+    height: 650px;
 }
 
 .third-section-content{
-    padding-top: 55px;
+    margin-top: 55px;
 }
 
 #third-section-paragraph{
@@ -428,15 +437,16 @@ span.larger-font-size{
 }
 
 .fourth-section-heading-paragraph{
+    font-size: 22px;
     color: #4d4d4d;
 }
 
 #fourth-section-paragraph{
-    padding-top: 30px;
+    margin-top: 30px;
 }
 
 .fourth-section-heading h2{
-    font-size: 40px;
+    font-size: 37px;
     letter-spacing: 2px;
     font-weight: bold;
     color: #F8B62D;
@@ -498,7 +508,7 @@ ul > li > span
 }
 
 #fourth-contact-btn-row{
-    padding: 25px 25px 50px 25px;
+    margin: 25px 0px 40px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -536,7 +546,7 @@ ul > li > span
 .fifth-section-content{
     position: relative;
     width: 100%;
-    padding-top: 15px;
+    margin-top: 15px;
 }
 
 .fifth-content-img1{
@@ -686,7 +696,6 @@ ul > li > span
 .logo-big{
     background-image: url(assets/picture/logo.png);
     background-repeat: no-repeat;
-    background-size: contain;
     width: 100%;
     height: 90px;
 }
@@ -701,7 +710,7 @@ ul > li > span
 
 .contact-first-section-text{
     color: white;
-    font-size: 12px;
+    font-size: 14px;
     text-align: left;
 }
 
@@ -761,7 +770,7 @@ ul > li > span
 }
 
 #fb-text{
-    padding-top: 45px;
+    margin-top: 45px;
 }
 
 #fb img{
@@ -802,7 +811,7 @@ input{
 
 label{
     margin: 0;
-    padding-top: 15px;
+    margin-top: 15px;
 }
 
 textarea.form-control{
@@ -843,6 +852,20 @@ textarea.form-control{
     outline: none;
 }
 
+div#success_message{
+width: 100%; 
+height: 100%; 
+display: none;
+color: #F8B62D;
+}
+
+div#error_message{
+width: 100%; 
+height: 100%; 
+display: none;
+color: #F8B62D;
+}
+
 .copyright-container{
     padding-top: 50px;
     font-size: 10px;
@@ -865,9 +888,6 @@ textarea.form-control{
     transition: all .3s ease-in-out;
 }
 
-#copyright{
-    margin: 10px;
-}
 
 /*----------------------------
 		Responsive			
@@ -931,19 +951,19 @@ textarea.form-control{
 	}
 
 	.third-section{
-		height: 750px;
+		height: 700px;
 	}
 
 	.third-section-content{
-		padding-top: 30px;
+		margin-top: 25px;
 	}
 
 	.third-section-heading h2{
-		font-size: 18px;
+		font-size: 16px;
 	}
 
 	.fifth-content-bg1{
-		height: 345px;
+		height: 335px;
 	}
 
 	.background2{
@@ -969,7 +989,7 @@ textarea.form-control{
 	}
 
 	#fourth-section-paragraph{
-		padding-top: 0;
+		margin-top: 30px;
 	}
 
 	.fourth-section-heading-paragraph{
@@ -1012,6 +1032,7 @@ textarea.form-control{
 
 	#fifth-section-heading-container {
     padding-top: 20px;
+    padding-bottom: 20px;
     }
 
     .fifth-section-bg{
@@ -1041,16 +1062,8 @@ textarea.form-control{
     }
 
     .contact-section{
-        height: 1000px;
+        height: 1020px;
         padding-top: 30px;
-    }
-
-	.copyright-container{
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 110%);
-        height: 50px;
-        padding-top: 0;
     }
 
 	.logo{
@@ -1078,6 +1091,19 @@ textarea.form-control{
 		position: absolute;
     	left: 25%;
 	}
+    
+    .copyright-container{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 960%);
+    padding-top: 0;
+    }
+
+    #copyright, #copyright a{
+    font-size: 7px;
+    margin-bottom: -5px;
+    }
+
 }
 
 @media screen and (min-width: 375px) and (max-width: 479px){
@@ -1139,11 +1165,11 @@ a, p, span, label, input, textarea, button, .first-section-paragraph p{
 	}
 
 	.third-section{
-		height: 830px;
+		height: 800px;
 	}
 
 	.third-section-content{
-		padding-top: 30px;
+		margin-top: 35px;
 	}
 
 	.third-section-heading h2{
@@ -1217,7 +1243,8 @@ a, p, span, label, input, textarea, button, .first-section-paragraph p{
 	}
 
 	#fifth-section-heading-container {
-    padding-top: 20px;
+    padding-top: 35px;
+    padding-bottom: 35px;
     }
 
     .fifth-section-bg{
@@ -1247,7 +1274,7 @@ a, p, span, label, input, textarea, button, .first-section-paragraph p{
     }
 
     .contact-section{
-        height: 1000px;
+        height: 1075px;
         padding-top: 30px;
     }
 
@@ -1257,6 +1284,11 @@ a, p, span, label, input, textarea, button, .first-section-paragraph p{
         transform: translate(-50%, 110%);
         height: 50px;
         padding-top: 0;
+    }
+    
+    #copyright, #copyright a{
+    font-size: 7px;
+    margin-top: 50px;
     }
 
 	.logo{
@@ -1458,7 +1490,7 @@ a, p, span, label, input, textarea, button, .first-section-paragraph p{
     }
 
     .contact-section{
-        height: 1020px;
+        height: 1100px;
         padding-top: 30px;
     }
 
@@ -1470,8 +1502,9 @@ a, p, span, label, input, textarea, button, .first-section-paragraph p{
         padding-top: 0;
     }
 
-    p#copyright, a#copyright{
-        font-size: 10px;
+    #copyright, #copyright a{
+    font-size: 10px;
+    margin-top: 30px;
     }
 
 	.logo-big{
@@ -1669,7 +1702,7 @@ a, p, span, label, input, textarea, button, .first-section-paragraph p{
 	}
 
 	.contact-section{
-		height: 685px;
+		height: 750px;
 		padding-top: 30px;
 	}
 
@@ -1708,6 +1741,10 @@ a, p, span, label, input, textarea, button, .first-section-paragraph p{
 
      #fb-text{
         padding-top: 0;
+    }
+    
+    #copyright, #copyright a{
+    font-size: 11px;
     }
 }
 
@@ -1873,7 +1910,7 @@ a, p, span, label, input, textarea, button, .first-section-paragraph p{
     }
 
     .contact-section{
-        height: 685px;
+        height: 750px;
         padding-top: 30px;
     }
 
@@ -1922,6 +1959,22 @@ a, p, span, label, input, textarea, button, .first-section-paragraph p{
 	a, p, span, label, input, textarea, button{
 		font-size:18px;
 	}
+
+    ul > li > span {
+        font-size: 16px;
+    }
+
+    .first-section-content-container p{
+        font-size: 18px;
+    }
+
+    .key-features-item-content{
+        font-size: 18px;
+    }
+
+    .fourth-section-heading-paragraph{
+        font-size: 18px;
+    }
 
 	.contact-section p{
 		font-size: 15px;

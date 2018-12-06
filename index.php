@@ -438,9 +438,12 @@
                 <h3 id="contact-form-heading">CONTACT FORM</h3>
                     <div class="line6"></div>
                         <div class="contact-form">
-                            <form id="contact-form" method="post" action="">
+                            <form role="form" id="contact-form" method="post">
                                 <label for="name">NAME</label>
-                                <input class="form-control" type="text" id="nameinput" name="name" placeholder="Your Name" required> 
+                                <input class="form-control" type="text" id="nameinput" name="name" placeholder="Your Name" required>
+                                
+                                <label for="email">EMAIL</label>
+                                <input class="form-control" type="email" id="emailinput" name="email" placeholder="Your Email" required>
 
                                 <label for="agree-for">AGREE FOR</label>
                                 <select class="form-control">
@@ -459,6 +462,16 @@
 
                                 <input type="submit" value="Submit" class="form-control-submit">
                             </form>
+                            
+                            <div id="success_message">
+                                <h3>Your message is sent successfully!</h3>
+                            </div>
+                            
+                            <div id="error_message">
+                                <h3>Error</h3>
+                                    Sorry there was an error sending your message.
+                            </div>
+                        
                         </div>
                     </div>
                 </div>
@@ -513,5 +526,69 @@ $('a[href*="#"]')
     }
   });
 </script>
+    
+<script>
+$(function()
+{
+    function after_form_submitted(data)
+    {
+        if(data.result == 'success')
+        {
+            $('form#contact-form').hide();
+            $('#success_message').show();
+            $('#error_message').hide();
+        }
+        else
+        {
+            $('#error_message').append('<ul></ul>');
+
+            jQuery.each(data.errors,function(key,val)
+            {
+                $('#error_message ul').append('<li>'+key+':'+val+'</li>');
+            });
+            $('#success_message').hide();
+            $('#error_message').show();
+
+            //reverse the response on the button
+            $('button[type="button"]', $form).each(function()
+            {
+                $btn = $(this);
+                label = $btn.prop('orig_label');
+                if(label)
+                {
+                    $btn.prop('type','submit' );
+                    $btn.text(label);
+                    $btn.prop('orig_label','');
+                }
+            });
+        }//else
+    }
+
+	$('#contact-form').submit(function(e)
+      {
+        e.preventDefault();
+
+        $form = $(this);
+        //show some response on the button
+        $('button[type="submit"]', $form).each(function()
+        {
+            $btn = $(this);
+            $btn.prop('type','button' );
+            $btn.prop('orig_label',$btn.text());
+            $btn.text('Sending ...');
+        });
+
+
+                    $.ajax({
+                type: "POST",
+                url: 'handler.php',
+                data: $form.serialize(),
+                success: after_form_submitted,
+                dataType: 'json'
+            });
+      });
+});
+</script>
+    
 </body>
 </html>
